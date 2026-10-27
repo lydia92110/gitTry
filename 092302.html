@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <base target="_blank">
+    <link rel="stylesheet" href="./css/092302.css">
+    <link rel="stylesheet" href="./css/myall.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <div class="logo bg-img">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://sat.cool/home">Services</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+
+            <h1>歡迎光臨</h1>
+            <p>你可以個人不斷練習，努力愛國甜食充盈，他想我了。</p>
+            <a href="">瞭解更多</a>
+            <form action="login.php" method="post">
+                <label for="email">帳號：</label>
+                <input type="text" id="email" name="email" required>
+                <label for="password">密碼：</label>
+                <input type="password" id="password" name="password">
+                <!-- checkbox可以顯示，但是在網頁顯示error -->
+                <input type="checkbox" id="show" onclick="showPassword()" />
+                <label for="show">顯示密碼</label>
+                <input type="checkbox" id="remember" checked name="remember" value="yes">
+                <label for="remember">記住我</label>
+                <!-- <input type="radio" id="male" name="gender" value="male">
+                <label for="male">男性</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">女性</label> -->
+                <label for="gender">性別：</label>
+                <select name="gender" id="gender">
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                </select>
+
+                <button type="submit">登入</button>
+                <input type="file" id="file" name="file">
+            </form>
+        </div>
+        <div class="footer">
+
+            <p class="fw-800">AI全端班Lydia所有</p>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery-4.0.0.js"></script>
+    <script>
+        let checkbox = document.querySelector("#show");
+        let password = document.querySelector("#password");
+        checkbox.addEventListener("click", () => {
+            if (password.type == "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

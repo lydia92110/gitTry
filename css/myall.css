@@ -1,0 +1,37 @@
+
+
+.myfont01 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ed5454;
+    text-align: center;
+}
+
+.myfont02 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #c454ed;
+    text-align: center;
+}
+
+.myfont03 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #54edc4;
+    text-align: center;
+}
+.myfont04 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ef898d;
+    text-align: center;
+}
+
+.bg-img{
+    background-position: center center;
+    background-size: cover;
+}

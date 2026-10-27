@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch7 flex - 時間軸(timeline)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <style>
+        .imgbox{
+            height: 280px;
+        }
+        .timeline-section{
+            position: relative;
+        }
+        .timeline-section::before{
+            position: absolute;
+            content: "";
+            width: 5px;
+            background-color: rgba(223, 20, 71, 0.3);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-section-pointer{
+            position: relative;
+        }
+        .timeline-section-pointer::before{
+            position: absolute;
+            content: "";
+            width: 28px;
+            height: 28px;
+            background-color: rgba(230, 129, 156, 0.8);
+            border-radius: 50%;
+            border: 8px solid rgba(63, 3, 18, 0.9);
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+
+        @media screen and (max-width: 768px){
+            /* .timeline-section::before, .timeline-section-pointer::before{
+                display: none;
+            } */
+
+            .timeline-section::before{
+                left: -20px;
+            }
+            .timeline-section-pointer::before{
+                left: -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display-2 text-center fw-900 my-4">時間軸(timeline)</div>
+        <div class="timeline-section">
+            <div class="row mt-3 align-items-center timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="imgbox bg-img roller-t" style="background-image: url(images/landspace01.avif);">
+                        <div class="rollerbox-t">
+                            <button class="btn btn-warning">查看更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h2 fw-900 text-center">01標題</div>
+                    <p>xxx: XXXXX</p>
+                    <p>xxx: XXXXX</p>
+                    <p>xxx: XXXXX</p>
+                </div>
+            </div>
+            <div class="row mt-3 flex-row-reverse align-items-center timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="imgbox bg-img" style="background-image: url(images/landspace02.avif);"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h2 fw-900 text-center">02標題</div>
+                    <p>檔案程式自主主義儘管環保，手裡我這前後不住交易得分最好臺灣民眾，當天製造，招商老人百度，接受中壢至。</p>
+                    
+                </div>
+            </div>
+            <div class="row mt-3 timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="imgbox bg-img" style="background-image: url(images/landspace03.avif);"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h2 fw-900 text-center">03標題</div>
+                    <p>檔案程式自主主義儘管環保，手裡我這前後不住交易得分最好臺灣民眾，當天製造，招商老人百度，接受中壢至。</p>
+                    <p>獎勵激動最為最高點擊也許，某個資訊購物常用系列身份專門位於，高校這種樓上晶片西安大學灌水預期奇蹟擁有點擊人事，介紹什麼公主每年享受不好意思筆者投票我和半年尚未一看本地下載，股份是一個本文任意，雖然很。</p>
+                </div>
+            </div>
+            <div class="row mt-3 flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="imgbox bg-img" style="background-image: url(images/landspace04.avif);"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h2 fw-900 text-center">04標題</div>
+                    <p>檔案程式自主主義儘管環保，手裡我這前後不住交易得分最好臺灣民眾，當天製造，招商老人百度，接受中壢至。</p>
+                    <p>獎勵激動最為最高點擊也許，某個資訊購物常用系列身份專門位於，高校這種樓上晶片西安大學灌水預期奇蹟擁有點擊人事，介紹什麼公主每年享受不好意思筆者投票我和半年尚未一看本地下載，股份是一個本文任意，雖然很。</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
